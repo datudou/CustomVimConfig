@@ -4,13 +4,19 @@ let g:mapleader = ","
 
 
 " Fast saving 
-nmap <leader>w : w!<cr>
+"nmap <leader>w : w!<cr>
 
 " Fast opne NERDTree
 nmap <F2> :NERDTreeToggle<cr>
 
 "Fast split window
-"
+nmap  <leader>s :source ~/.vimrc<cr>
+
+"Swithc buffler
+nmap <leader>bn :bn<cr>
+nmap <leader>bp :bp<cr>
+nmap <leader>bl :bl<cr>
+nmap <leader>bf :bf<cr>
 
 
 call plug#begin('~/.vim/plugged') 
@@ -29,14 +35,22 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree', {'on':'NERDTreeToggle'}
 Plug 'easymotion/vim-easymotion'
+Plug 'isRuslan/vim-es6'
+Plug 'airblade/vim-gitgutter'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'majutsushi/tagbar'
+Plug 'ternjs/tern_for_vim'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 
 " Color Theme
 set background=dark
 "colorscheme solarized
-colorscheme molokai
+"colorscheme molokai
 "colorscheme phd
+colorscheme evening
+
 
 " Config
 set number
@@ -122,7 +136,7 @@ map  <Leader>f <Plug>(easymotion-bd-f)
 nmap <Leader>f <Plug>(easymotion-overwin-f)
 
 " s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
+"nmap <leader>  <Plug>(easymotion-overwin-f2)
 
 " Move to line
 map <Leader>L <Plug>(easymotion-bd-jk)
@@ -131,5 +145,23 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" tagbar
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+
+" 随 vim 自启动
+"let g:indent_guides_enable_on_vim_startup=1
+"" 从第二层开始可视化显示缩进
+"let g:indent_guides_start_level=2
+"" 色块宽度
+"let g:indent_guides_guide_size=1
+"" 快捷键 i 开/关缩进可视化
+"nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
+
+" 显示/隐藏 MiniBufExplorer 窗口
+"map <Leader>bl :MBEToggle<cr>
+" buffer 切换快捷键
+"map <C-Tab> :MBEbn<cr>
+"map <C-S-Tab> :MBEbp<cr>
 
 
