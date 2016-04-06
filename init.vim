@@ -41,6 +41,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'majutsushi/tagbar'
 Plug 'ternjs/tern_for_vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 
@@ -164,4 +165,7 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 "map <C-Tab> :MBEbn<cr>
 "map <C-S-Tab> :MBEbp<cr>
 
+
+let g:tern_show_argument_hints = 'on_hold'
+let g:tern_show_signature_in_pum = 1
 
