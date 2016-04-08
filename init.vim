@@ -42,6 +42,7 @@ Plug 'majutsushi/tagbar'
 Plug 'ternjs/tern_for_vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'mattn/emmet-vim'
+Plug 'posva/vim-vue'
 call plug#end()
 
 
@@ -68,8 +69,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 
 " Linebreak on 500 characters
