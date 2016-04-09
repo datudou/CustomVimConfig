@@ -43,6 +43,8 @@ Plug 'ternjs/tern_for_vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 
